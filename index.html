@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -19,21 +20,36 @@
             <button class="button" id="grid">
                 Edit Grid Size: 16
             </button>
-            <button class="button">
-                Rainbow: Off
-            </button>
+            <button class="button" id="rainbow">Rainbow: OFF</button>
             <button id="colorPickerButton" class="button">
-                <div class="colorCircle"></div>
-                Color Picker
+                <div class="button-content">
+                    <div class="colorCircle"></div>
+                    <span>Color Picker</span>
+                </div>
             </button>
             <input type="color" id="colorPicker" style="display: none;">
-            <button class="button">
+            <button class="button" id="eraser">
+                Eraser
+            </button>
+            <button class="button" id="reset">
                 Reset
             </button>
         </div>
+        <div class="divider"></div>
         <div class="container"></div>
     </div>
-
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          fiza-h
+        </p>
+        <a href="https://github.com/fiza-h" target="_blank">
+          <i class="fab fa-github"></i
+        ></a>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
