@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="paintbrush-png-20024-Windows.ico">
+</head>
+<body>
+    <header>
+        <h2>Etch-A-Sketch</h2>
+    </header>
+    <div class="menuButtons">
+        <button id="grid">Edit Grid Size: <span id="size">16</span></button>
+        <button>Rainbow: Off</button>
+        <button id="colorPickerButton">
+            <div class="colorCircle"></div>
+            Color Picker
+        </button>
+        <input type="color" id="colorPicker" style="display: none;">
+        <button>Reset</button>
+    </div>
+    <div class="container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

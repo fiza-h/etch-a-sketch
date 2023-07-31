@@ -1,0 +1,48 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+:root {
+    --size: 16;
+    --pen-color: black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px; /* Adjust the size as per your requirement */
+}
+
+.square {
+    width: calc(100% / var(--size));
+    padding-bottom: calc(100% / var(--size)); /* For square divs */
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.square:hover {
+    background-color: var(--pen-color); /* Change this to the desired color on hover */
+}
+.square.hovered {
+    background-color: var(--pen-color); /* The same color as the hover effect */
+}
+
+/* Add styles for the circular element */
+.colorCircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+    border: 2px solid #000;
+    background-color: var(--pen-color);
+}
+
+/* #colorPickerButton {
+    display: flex;
+    align-items: center;
+} */
+
