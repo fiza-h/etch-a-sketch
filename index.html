@@ -6,22 +6,33 @@
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="paintbrush-png-20024-Windows.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h2>Etch-A-Sketch</h2>
     </header>
-    <div class="menuButtons">
-        <button id="grid">Edit Grid Size: <span id="size">16</span></button>
-        <button>Rainbow: Off</button>
-        <button id="colorPickerButton">
-            <div class="colorCircle"></div>
-            Color Picker
-        </button>
-        <input type="color" id="colorPicker" style="display: none;">
-        <button>Reset</button>
+    <div class="wrapper">
+        <div class="menuButtons">
+            <button class="button" id="grid">
+                Edit Grid Size: 16
+            </button>
+            <button class="button">
+                Rainbow: Off
+            </button>
+            <button id="colorPickerButton" class="button">
+                <div class="colorCircle"></div>
+                Color Picker
+            </button>
+            <input type="color" id="colorPicker" style="display: none;">
+            <button class="button">
+                Reset
+            </button>
+        </div>
+        <div class="container"></div>
     </div>
-    <div class="container"></div>
 
     <script src="script.js"></script>
 </body>
